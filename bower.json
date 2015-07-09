@@ -1,0 +1,19 @@
+{
+  "name": "koComponentsWallaby",
+  "version": "0.0.0",
+  "authors": [
+    "RainerAtSpirit"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "~3.3.0",
+    "jquery": "~2.1.4"
+  }
+}

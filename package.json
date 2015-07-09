@@ -1,0 +1,18 @@
+{
+  "name": "koComponentsWallaby",
+  "version": "1.0.0",
+  "description": "editing html files do not trigger test runs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RainerAtSpirit",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "lodash": "^3.10.0",
+    "raw-loader": "^0.5.1",
+    "wallaby-webpack": "0.0.5",
+    "webpack": "^1.10.1"
+  }
+}
