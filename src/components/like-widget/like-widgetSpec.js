@@ -1,10 +1,11 @@
 var sut = require('./like-widget'),
-    _ = require('lodash'),
     sutExports = [
         {name: 'viewModel', type: 'object'},
         {name: 'synchronous', type: 'boolean'},
         {name: 'template', type: 'string'}
     ];
+
+ko.components.register('like-widget', sut);
 
 describe('like widget', function() {
 
@@ -42,10 +43,10 @@ describe('like widget', function() {
         });
     });
 
-    describe('template', function(){
+    describe('template', function() {
         var fragment = $('<div></div>').html(sut.template);
 
-        it('should have one div with class of ".result"', function(){
+        it('should have one div with class of ".result"', function() {
 
             console.log($('.result', fragment).length);
             assert.equal($('.result', fragment).length, 1);
@@ -53,3 +54,4 @@ describe('like widget', function() {
     })
 
 });
+

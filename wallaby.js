@@ -8,15 +8,18 @@ module.exports = function() {
         files: [
             {pattern: 'node_modules/chai/chai.js', instrument: false},
             {pattern: 'bower_components/jquery/dist/jquery.min.js', "instrument": false },
+            {pattern: 'bower_components/lodash/lodash.min.js', "instrument": false },
             {pattern: 'bower_components/knockout/dist/knockout.js', "instrument": false },
             {pattern: 'src/**/*.js', load: false},
             // load all .js\html files
             {pattern: 'src/**/*.html', load: false},
-            {pattern: '!src/**/*Spec.js', load: false}
+            {pattern: '!src/**/*Spec.js', load: false},
+            {pattern: '!src/**/*Func.js', load: false}
         ],
 
         tests: [
-            {pattern: 'src/**/*Spec.js', load: false}
+            {pattern: 'src/**/*Spec.js', load: false},
+            {pattern: 'src/**/*Func.js', load: false}
         ],
 
         preprocessors: {},
